@@ -139,7 +139,7 @@ def RandomForestAblation(depth):
     model_prediction = model.predict(x_test)
     return EvaluateModel(model_prediction)
 
-random_forest_ablation_data = [[3] + RandomForestAblation(3),
+random_forest_ablation_data = [[3] + random_forest_metrics,
                                [5] + RandomForestAblation(5),
                                [7] + RandomForestAblation(7),
                                [9] + RandomForestAblation(9)]
